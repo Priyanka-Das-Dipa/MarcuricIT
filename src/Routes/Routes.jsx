@@ -8,7 +8,7 @@ import Doctor_Report from "../pages/Doctor_Report/Doctor_Report";
 
 export const router = createBrowserRouter([
   {
-    path: "/admin",
+    path: "/",
     element: <Main></Main>,
     children: [
       {
