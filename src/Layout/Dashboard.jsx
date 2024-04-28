@@ -21,7 +21,7 @@ const Dashboard = () => {
           </li>
         </ul>
       </div>
-      <div className="flex-1 p-8">
+      <div className="flex-1 p-8 bg-black">
         <Outlet></Outlet>
       </div>
     </div>
