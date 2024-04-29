@@ -1,21 +1,32 @@
 import { AiOutlineDelete } from "react-icons/ai";
 import { FaEdit, FaPlus } from "react-icons/fa";
 import Pagination from "../../components/Pagination";
+import { NavLink } from "react-router-dom";
 const Expenses = () => {
   return (
     <div className=" p-8 border border-blue-600 bg-white border-t-8 rounded-t-3xl ">
       <div>
         <div className="flex justify-between">
-            <div>
-              <h1 className="text-xl font-normal">Expenses Table</h1>
-            </div>
+          <div>
+            <h1 className="text-xl font-normal">Expenses Table</h1>
+          </div>
+          <NavLink to="/expense_create">
             <div className="flex items-center gap-1 bg-blue-600 text-white p-2 rounded-md">
-            <FaPlus /> Create
+              <FaPlus /> Create
             </div>
+          </NavLink>
         </div>
         <div className="divider"></div>
         <div className="flex justify-between mb-3">
-          <div>Show<input type="number" defaultValue="5" className="w-16 border ml-2 mr-2 border-black rounded-md"/>records</div>
+          <div>
+            Show
+            <input
+              type="number"
+              defaultValue="5"
+              className="w-16 border ml-2 mr-2 border-black rounded-md"
+            />
+            records
+          </div>
           <div>
             Search: <input type="search" className="" />
           </div>

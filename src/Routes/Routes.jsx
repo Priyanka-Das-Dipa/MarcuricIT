@@ -5,6 +5,7 @@ import Account_Report from "../pages/Account_Report/Account_Report";
 import Doctor_Report from "../pages/Doctor_Report/Doctor_Report";
 import Home from "../pages/Home/Home";
 import Expense_Category_From from "../components/Expense_Category_From/Expense_Category_From";
+import Expense_Create_From from "../components/Expense_Create_From/Expense_Create_From";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,9 @@ export const router = createBrowserRouter([
       {
         path: "expense_from",
         element:<Expense_Category_From></Expense_Category_From>
+      },{
+        path: "expense_create",
+        element: <Expense_Create_From></Expense_Create_From>
       }
     ],
   },
