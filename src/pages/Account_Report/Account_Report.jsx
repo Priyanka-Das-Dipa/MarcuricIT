@@ -21,7 +21,7 @@ const Account_Report = () => {
               </div>
               <div className="border-r border-b border-l shadow-lg rounded-b-lg">
 
-              <div className="grid grid-cols-6 gap-4 justify-center items-center px-5 pb-5">
+              <div className="grid grid-cols-1 md:grid-cols-6 gap-4 justify-center items-center px-5 pb-5">
                 <div>
                   <label className="form-control w-full max-w-xs">
                     <div className="label">
