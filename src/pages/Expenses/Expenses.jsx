@@ -1,5 +1,6 @@
 import { AiOutlineDelete } from "react-icons/ai";
 import { FaEdit, FaPlus } from "react-icons/fa";
+import Pagination from "../../components/Pagination";
 const Expenses = () => {
   return (
     <div className=" p-8 border border-blue-600 bg-white border-t-8 rounded-t-3xl ">
@@ -186,6 +187,7 @@ const Expenses = () => {
           </tbody>
         </table>
       </div>
+      <Pagination></Pagination>
     </div>
   );
 };
