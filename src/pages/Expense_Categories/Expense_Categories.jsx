@@ -1,6 +1,7 @@
 import { AiOutlineDelete } from "react-icons/ai";
 import { FaEdit, FaPlus } from "react-icons/fa";
 import Pagination from "../../components/Pagination";
+import { NavLink } from "react-router-dom";
 
 const Expense_Categories = () => {
   return (
@@ -11,9 +12,11 @@ const Expense_Categories = () => {
             <div>
               <h1 className="text-xl font-normal">Expense Categories Table</h1>
             </div>
-            <div className="flex items-center gap-1 bg-blue-600 text-white p-2 rounded-md">
-              <FaPlus /> Create
-            </div>
+            <NavLink to="/expense_from">
+              <div className="flex items-center gap-1 bg-blue-600 text-white p-2 rounded-md">
+                <FaPlus /> Create
+              </div>
+            </NavLink>
           </div>
           <div className="divider"></div>
           <div className="flex justify-between mb-3">

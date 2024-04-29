@@ -56,6 +56,10 @@ const Home = () => {
                   <FaRegCircle />
                   <NavLink to="/doctor_report">Doctor Report</NavLink>
                 </li>
+                <li className="flex gap-2 items-center">
+                  <FaRegCircle />
+                  <NavLink to="/expense_from">Doctor Report</NavLink>
+                </li>
               </ul>
             </details>
           </li>
