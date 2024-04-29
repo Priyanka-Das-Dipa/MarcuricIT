@@ -1,157 +1,190 @@
+import { AiOutlineDelete } from "react-icons/ai";
+import { FaEdit, FaPlus } from "react-icons/fa";
 const Expenses = () => {
   return (
-    <div>
-      <div className="rounded-lg border border-gray-200">
-        <div className="overflow-x-auto rounded-t-lg">
-          <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-            <thead className="ltr:text-left rtl:text-right">
-              <tr>
-                <th className="whitespace-nowrap px-4 py-2 font-medium bg-blue-600 text-white">
-                  #
-                </th>
-                <th className="whitespace-nowrap px-4 py-2 font-medium bg-blue-600 text-white">
-                  Name
-                </th>
-                <th className="whitespace-nowrap px-4 py-2 font-medium bg-blue-600 text-white">
-                  Date of Birth
-                </th>
-                <th className="whitespace-nowrap px-4 py-2 font-medium bg-blue-600 text-white">
-                  Role
-                </th>
-                <th className="whitespace-nowrap px-4 py-2 font-medium bg-blue-600 text-white">
-                  Salary
-                </th>
-              </tr>
-            </thead>
-
-            <tbody className="divide-y divide-gray-200">
-              <tr>
-                <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                  1
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                  John Doe
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  24/05/1995
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  Web Developer
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  $120,000
-                </td>
-              </tr>
-
-              <tr>
-                <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                  Jane Doe
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  04/11/1980
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  Web Designer
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  $100,000
-                </td>
-              </tr>
-
-              <tr>
-                <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                  Gary Barlow
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  24/05/1995
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  Singer
-                </td>
-                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  $20,000
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div className=" p-8 border border-blue-600 bg-white border-t-8 rounded-t-3xl ">
+      <div>
+        <div className="flex justify-between">
+            <div>
+              <h1 className="text-xl font-normal">Expenses Table</h1>
+            </div>
+            <div className="flex items-center gap-1 bg-blue-600 text-white p-2 rounded-md">
+            <FaPlus /> Create
+            </div>
         </div>
-
-        <div className="rounded-b-lg border-t border-gray-200 px-4 py-2">
-          <ol className="flex justify-end gap-1 text-xs font-medium">
-            <li>
-              <a
-                href="#"
-                className="inline-flex size-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180"
-              >
-                <span className="sr-only">Prev Page</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-3 w-3"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
-              >
-                1
-              </a>
-            </li>
-
-            <li className="block size-8 rounded border-blue-600 bg-blue-600 text-center leading-8 text-white">
-              2
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
-              >
-                3
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
-              >
-                4
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="inline-flex size-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180"
-              >
-                <span className="sr-only">Next Page</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-3 w-3"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ol>
+        <div className="divider"></div>
+        <div className="flex justify-between mb-3">
+          <div>Show<input type="number" defaultValue="5" className="w-16 border ml-2 mr-2 border-black rounded-md"/>records</div>
+          <div>
+            Search: <input type="search" className="" />
+          </div>
         </div>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="table table-zebra">
+          {/* head */}
+          <thead>
+            <tr className="bg-blue-600 text-white">
+              <th>#</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* row 1 */}
+            <tr>
+              <th>1</th>
+              <td>Cy Ganderton</td>
+              <td>Quality Control Specialist</td>
+              <td>Blue</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 2 */}
+            <tr>
+              <th>2</th>
+              <td>Hart Hagerty</td>
+              <td>Desktop Support Technician</td>
+              <td>Purple</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 3 */}
+            <tr>
+              <th>3</th>
+              <td>Hart Hagerty</td>
+              <td>Desktop Support Technician</td>
+              <td>Purple</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 4 */}
+            <tr>
+              <th>4</th>
+              <td>Brice Swyre</td>
+              <td>Tax Accountant</td>
+              <td>Red</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 5 */}
+            <tr>
+              <th>5</th>
+              <td>Brice Swyre</td>
+              <td>Tax Accountant</td>
+              <td>Red</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 6 */}
+            <tr>
+              <th>6</th>
+              <td>Brice Swyre</td>
+              <td>Tax Accountant</td>
+              <td>Red</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 7 */}
+            <tr>
+              <th>7</th>
+              <td>Brice Swyre</td>
+              <td>Tax Accountant</td>
+              <td>Red</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 8 */}
+            <tr>
+              <th>8</th>
+              <td>Brice Swyre</td>
+              <td>Tax Accountant</td>
+              <td>Red</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 9 */}
+            <tr>
+              <th>9</th>
+              <td>Brice Swyre</td>
+              <td>Tax Accountant</td>
+              <td>Red</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+            {/* row 10 */}
+            <tr>
+              <th>10</th>
+              <td>Brice Swyre</td>
+              <td>Tax Accountant</td>
+              <td>Red</td>
+              <td className="">
+                <button className="p-2 rounded-full bg-blue-500 ">
+                  <FaEdit className="text-xl text-white" />
+                </button>
+                <button className="ml-4 p-2 rounded-full bg-red-500">
+                  <AiOutlineDelete className="text-xl text-white" />
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );
